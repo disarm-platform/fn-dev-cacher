@@ -5,7 +5,10 @@ def handle(req):
     Args:
         req (str): layer_name
     """
+    try:
+        layer_data = cacher.get_layer_data(req)
+    except Exception as e:
+        # TODO: Print error to stderr
+        length = len(layer_data)
+        return length
 
-    layer_data = cacher.get_layer_data(req)
-    length = len(layer_data)
-    return length
