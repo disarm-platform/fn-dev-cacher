@@ -1,4 +1,5 @@
 def get_layer_data(req):
+    return req
     # Convert `req` into a filename / path
     cached_path = req + ".zip" # TODO: Do this more cross-OS reliably
 

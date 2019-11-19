@@ -1,4 +1,4 @@
-from cacher import get_layer_data
+from function import cacher
 
 def handle(req):
     """handle a request to the function
@@ -6,6 +6,6 @@ def handle(req):
         req (str): layer_name
     """
 
-    layer_data = get_layer_data(req)
+    layer_data = cacher.get_layer_data(req)
     length = len(layer_data)
     return length

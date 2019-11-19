@@ -5,6 +5,6 @@ provider:
 functions:
   fn-dev-cacher:
     lang: python
-    handler: ./fn-dev-cacher
+    handler: ./function
     image: disarm/fn-dev-cacher:latest
 
