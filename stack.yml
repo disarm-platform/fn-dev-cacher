@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.srv.disarm.io
+functions:
+  fn-dev-cacher:
+    lang: python
+    handler: ./fn-dev-cacher
+    image: disarm/fn-dev-cacher:latest
+
